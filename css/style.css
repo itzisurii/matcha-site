@@ -12,9 +12,6 @@
 
 body {
   background-color: rgb(214, 202, 202);
-  /* overflow: hidden; */
-  /* background-color: #04113b; */
-  /* background-color: #D8CAB8; */
 }
 body {
   padding-top: 88px; /* Match or exceed header height */
@@ -28,7 +25,6 @@ header {
   left: 0;
   width: 100vw;
   background-color: rgba(12, 77, 22, 0.8);
-  /* background-color: #5c5c5c; */
 }
 
 .logo {
@@ -75,35 +71,6 @@ header {
   font-weight: 500;
   text-decoration: none;
 }
-
-/* .home-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.home-1img {
-  position: relative;
-}
-
-.home-1img img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
-.text-container {
-  position: absolute;
-  top: 25%;
-  left: 60%;
-  transform: translate(-50%, 50%);
-  color: white;
-  text-align: left;
-  padding: 18px;
-  background-color: (0, 0, 0, 0.4);
-  border-radius: 0px;
-} */
 
 .home-container {
   position: relative;
@@ -185,7 +152,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
-  padding: 60px 40px;
+  padding: 1px 40px;
+  
 }
 
 .shop-img {
@@ -239,16 +207,6 @@ header {
 .shop-img .add-to-cart:hover {
   background-color: #006600;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------------KITS AND TOOLS------------------------- */
 .kitAndToolMainImage {
@@ -350,11 +308,6 @@ header {
 .info-text p {
   margin-bottom: 1.2em;
 }
-
-
-
-
-
 
 /* ------------------------- LEARN ------------------------- */
 
@@ -534,12 +487,6 @@ section {
 }
 
 
-
-
-
-
-
-
 /* -------------------------ABOUT US------------------------- */
 
 .aboutUsMain-section {
@@ -588,35 +535,93 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------- LOGIN ------------------------- */
+.login-container {
+    max-width: 450px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    
+}
 
+.login-container h2 {
+    text-align: center;
+    color: #2d5d34;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
 
+/* .login-container h4 {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 6px;
+} */
 
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    text-align: left;
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.name{
+  text-align: left;
+}
 
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #2d5d34;
+}
 
+.login-container input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d5d34;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-
-
-
-
-
-
-
+.login-container input[type="button"]:hover {
+    background-color: #1f4024;
+}
 
 
 /* ------------------------- CART ------------------------- */
+.cart-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  margin: 30px 0;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.place-order-btn {
+  padding: 12px 30px;
+  background-color: #3b7a57;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #2e6345;
+}
 
 /* ---------------------------------------------------- */
 .add-to-cart {
@@ -750,7 +755,7 @@ footer {
 }
 
 .footer-logo img {
-  max-width: 200px;   /* adjust size */
+  max-width: 200px;   
   height: auto;
   border-radius: 20px;
 }
